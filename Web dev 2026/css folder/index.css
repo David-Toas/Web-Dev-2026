@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  border-radius: 50%;
+  padding: 5px 20px;
+  height: 400px;
+  width: 400px;
+}
+
+.first div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  animation: first 2s linear infinite;
+  /* anima */
+}
+
+@media screen and (max-width: 720px) {
+}
