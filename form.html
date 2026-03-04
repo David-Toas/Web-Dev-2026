@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <center>
+      <form action="/submit" method="POST" enctype="multipart/form-data">
+        <!-- Fieldset (groups form controls) -->
+        <fieldset>
+          <legend>Personal Information</legend>
+          <!-- Text input with label -->
+          <label for="username">Full Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            placeholder="John Doe"
+            minlength="2"
+          />
+          <br />
+          <!-- Tel Input - Email -->
+          <label for="Email">Email:</label>
+          <input
+            type="text"
+            id="Email"
+            name="Email"
+            required
+            placeholder="johndoe@gmail.com"
+          />
+
+          <br />
+          <!-- Tel Input - Phone number -->
+          <label for="Phone">Phone Number:</label>
+          <input
+            type="Number"
+            id="Phone"
+            name="Phone"
+            required
+            minlength="11"
+          />
+        </fieldset>
+
+        <!-- Textarea -->
+        <textarea
+          name="message"
+          rows="5"
+          cols="40"
+          maxlength="500"
+          required
+          placeholder="Give your feedback about our products here..."
+        ></textarea>
+
+        <br />
+        <!-- Submit button -->
+        <button type="submit">Send Message</button>
+
+        <br />
+        <!-- Select -->
+        <label for="state">How Did You Hear About Us:</label>
+        <select name="state" id="state" style="background-color: yellow">
+          <option value="option1">Friends/Family</option>
+          <option value="option2">Social Media</option>
+          <option value="option3">Television</option>
+          <option value="option2">Billboard Advert</option>
+          <option value="option3">Work Colleagues</option>
+        </select>
+        <br />
+
+        <br />
+        <label for="Newsletter Subscription"
+          >Would you love to subscribe to our newsletter:</label
+        >
+        <label for="Yes">Yes <input type="checkbox" /></label>
+        <label for="No">No <input type="checkbox" /></label>
+        <br />
+
+        <!-- Fieldset (groups form controls) -->
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="Preferred contact method"
+            >Preferred contact method:</label
+          >
+          <label for="method1">Email <input type="radio" /></label>
+          <label for="method2">Phone <input type="radio" /></label>
+          <label for="method3">Text <input type="radio" /></label>
+
+          <br />
+          <label for="Best time to contact">Best time to contact:</label>
+          <input type="date" id="date" name="date" />
+          <br />
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" />
+          <br />
+        </fieldset>
+
+        <!-- Submit button -->
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+        
+      </form>
+    </center>
+  </body>
+</html>
