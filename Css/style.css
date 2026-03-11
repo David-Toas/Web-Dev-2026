@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 50px;
+  /* background-color: aqua; */
+}
+
+h1,
+h3,
+h4 {
+  color: saddlebrown;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: larger;
+}
+
+#header {
+  background-color: moccasin;
+  height: 50px;
+  overflow-y: auto;
+  height: 150px;
+}
+
+#header nav li {
+  color: peru;
+}
+
+.card {
+  background-color: bisque;
+  padding: 20px;
+  border: 10px solid;
+}
+
+.test {
+  background-color: chocolate !important;
+  color: cornsilk !important;
+}
