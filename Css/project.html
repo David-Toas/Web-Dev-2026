@@ -12,50 +12,13 @@
     />
     <meta name="author" content="Adepegba" />
     <link rel="stylesheet" href="style.css" />
-
-    <!-- <style>
-      body {
-        margin: 0;
-        padding: 50px;
-        /* background-color: aqua; */
-      }
-
-      h1,
-      h3,
-      h4 {
-        color: saddlebrown;
-        font-family:
-          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-size: larger;
-      }
-
-      #header {
-        background-color: moccasin;
-        height: 50px;
-        overflow-y: auto;
-        height: 150px;
-      }
-
-      #header nav li {
-        color: peru;
-      }
-
-      .card {
-        background-color: bisque;
-        padding: 20px;
-        border: 10px solid;
-      }
-    </style> -->
   </head>
   <body>
     <!-- HEADER -->
     <header id="header">
-      <h1>Adepegba Kayode</h1>
-      <p>Backend Developer | Building clean and functional web solutions</p>
-
-      <!-- MAIN NAVIGATION -->
+      <img src="/ak_logo.svg" alt="logo" />
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -63,189 +26,211 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <!-- MAIN NAVIGATION -->
     </header>
 
     <main>
-      <!-- ABOUT SECTION -->
-      <section id="about" class="card">
-        <hr />
-        <h1>About</h1>
-        <img
-          src="profile photo/photo_2026-03-06_20-49-15.jpg"
-          alt="Profile Picture"
-          width="200"
-          height="200"
-        />
-
-        <p>
-          I am a passionate full-stack developer based in Abeokuta, Nigeria.
-          With strong foundations in HTML5, JavaScript, and modern web
-          technologies, <br />I love creating user-friendly websites and
-          applications. This portfolio demonstrates my skills, projects, and
-          academic background.
-        </p>
-      </section>
-
-      <!-- SKILLS SECTION -->
-      <hr />
-      <section id="skills">
-        <h3>Skills</h3>
-        <ul>
-          <li>HTML/HTML5</li>
-          <li>Microsoft 365</li>
-          <li>Digital literacy</li>
-          <li>Cryptocurrency Trading</li>
-          <li>Information Technology Skills</li>
-          <li>Communication Skills</li>
-        </ul>
-      </section>
-
-      <!-- PROJECTS SECTION -->
-      <hr />
-      <section id="projects">
-        <h3>Projects</h3>
-        <!-- Project 1 -->
-        <article>
-          <h4>Personal Portfolio Website</h4>
-          <p>
-            A clean single-page portfolio built with pure HTML5 semantic
-            elements. Features navigation, form, table and proper document
-            structure.
-          </p>
-          <p>
-            <a
-              href="https://github.com/kayddev/html-proj/blob/main/project.html"
-              target="_blank"
-              >View on GitHub</a
-            >
-          </p>
-        </article>
-
-        <!-- Project 2 -->
-        <article>
-          <h4>Comprehensive Data Form</h4>
-          <p
-            class="test"
-            style="
-              background-color: palegoldenrod;
-              color: dimgray;
-              font-size: medium;
-              font-family: Georgia, &quot;Times New Roman&quot;, Times, serif;
-              padding: 10px;
-              border: 1px solid goldenrod;
-            "
-          >
-            A well detailed comprehensive form containing users' personal info,
-            contact information, newsletter subscription, including submit
-            button.
-          </p>
-          <p>
-            <a
-              href="https://github.com/kayddev/html-proj/blob/main/form.html"
-              target="_blank"
-              >View on GitHub</a
-            >
-          </p>
-        </article>
-
-        <!-- Project 3 -->
-        <article>
-          <h4>Well structured twin-data Table</h4>
-          <p>
-            A well structured table depicting educational background of four
-            graduates, and another table showing the skills comparison of a
-            graphics designer and a data analyst
-          </p>
-          <p>
-            <a
-              href="https://github.com/kayddev/html-proj/blob/main/table.html"
-              target="_blank"
-              >View on GitHub</a
-            >
-          </p>
-        </article>
-      </section>
-
-      <!-- EDUCATION SECTION -->
-      <hr />
-      <section id="education">
-        <h3>Education</h3>
-        <table border="1">
-          <thead>
-            <tr>
-              <th>School</th>
-              <th>Degree</th>
-              <th>Year</th>
-              <th>Grade</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Obafemi Awolowo University</td>
-              <td>B.A English</td>
-              <td>2018-2022</td>
-              <td>Second class</td>
-            </tr>
-
-            <tr>
-              <td>Abeokuta Grammar School</td>
-              <td>Secondary School Certificate</td>
-              <td>2010 - 2016</td>
-              <td>Distinction</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-
-      <!-- CONTACT SECTION -->
-      <section id="contact">
-        <h4>Contact Me</h4>
-
-        <form action="#" method="post">
-          <p>
-            <label for="name">Full Name </label><br />
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="John Doe"
-              required
+      <h1>Adepegba Kayode</h1>
+      <p>Backend Developer | Building clean and functional web solutions</p>
+      <div class="divide">
+        <div>
+          <!-- ABOUT SECTION -->
+          <section id="about" class="card">
+            <hr />
+            <h1>About</h1>
+            <img
+              src="profile photo/photo_2026-03-06_20-49-15.jpg"
+              alt="Profile Picture"
+              width="200"
+              height="200"
             />
-          </p>
 
-          <p>
-            <label for="email">Email Address </label><br />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Johndoe@gmail.com"
-            />
-          </p>
+            <p>
+              I am a passionate full-stack developer based in Abeokuta, Nigeria.
+              With strong foundations in HTML5, JavaScript, and modern web
+              technologies, <br />I love creating user-friendly websites and
+              applications. This portfolio demonstrates my skills, projects, and
+              academic background.
+            </p>
+          </section>
 
-          <p>
-            <label for="subject">Subject </label><br />
-            <input type="text" id="subject" name="subject" required />
-          </p>
+          <!-- SKILLS SECTION -->
+          <hr />
+          <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML/HTML5</li>
+              <li>Microsoft 365</li>
+              <li>Digital literacy</li>
+              <li>Cryptocurrency Trading</li>
+              <li>Information Technology Skills</li>
+              <li>Communication Skills</li>
+            </ul>
+          </section>
 
-          <p>
-            <label for="message">Message </label><br />
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              minlength="100"
-              required
-            >
-            </textarea>
-          </p>
+          <!-- PROJECTS SECTION -->
+          <hr />
+          <section id="projects">
+            <h3>Projects</h3>
+            <!-- Project 1 -->
+            <article>
+              <h4>Personal Portfolio Website</h4>
+              <p>
+                A clean single-page portfolio built with pure HTML5 semantic
+                elements. Features navigation, form, table and proper document
+                structure.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/kayddev/html-proj/blob/main/project.html"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </p>
+            </article>
 
-          <p>
-            <button type="submit">Send Message</button>
-          </p>
-        </form>
-      </section>
+            <!-- Project 2 -->
+            <article>
+              <h4>Comprehensive Data Form</h4>
+              <p
+                class="test"
+                style="
+                  background-color: palegoldenrod;
+                  color: dimgray;
+                  font-size: medium;
+                  font-family:
+                    Georgia, &quot;Times New Roman&quot;, Times, serif;
+                  padding: 10px;
+                  border: 1px solid goldenrod;
+                "
+              >
+                A well detailed comprehensive form containing users' personal
+                info, contact information, newsletter subscription, including
+                submit button.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/kayddev/html-proj/blob/main/form.html"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </p>
+            </article>
+
+            <!-- Project 3 -->
+            <article>
+              <h4>Well structured twin-data Table</h4>
+              <p>
+                A well structured table depicting educational background of four
+                graduates, and another table showing the skills comparison of a
+                graphics designer and a data analyst
+              </p>
+              <p>
+                <a
+                  href="https://github.com/kayddev/html-proj/blob/main/table.html"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </p>
+            </article>
+          </section>
+
+          <!-- EDUCATION SECTION -->
+          <hr />
+          <section id="education">
+            <h3>Education</h3>
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>School</th>
+                  <th>Degree</th>
+                  <th>Year</th>
+                  <th>Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Obafemi Awolowo University</td>
+                  <td>B.A English</td>
+                  <td>2018-2022</td>
+                  <td>Second class</td>
+                </tr>
+
+                <tr>
+                  <td>Abeokuta Grammar School</td>
+                  <td>Secondary School Certificate</td>
+                  <td>2010 - 2016</td>
+                  <td>Distinction</td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+
+          <!-- CONTACT SECTION -->
+          <section id="contact">
+            <h4>Contact Me</h4>
+
+            <form action="#" method="post">
+              <p>
+                <label for="name">Full Name </label><br />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </p>
+
+              <p>
+                <label for="email">Email Address </label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Johndoe@gmail.com"
+                />
+              </p>
+
+              <p>
+                <label for="subject">Subject </label><br />
+                <input type="text" id="subject" name="subject" required />
+              </p>
+
+              <p>
+                <label for="message">Message </label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="6"
+                  minlength="100"
+                  required
+                >
+                </textarea>
+              </p>
+
+              <p>
+                <button type="submit">Send Message</button>
+              </p>
+            </form>
+          </section>
+        </div>
+        <div class="skills">
+          <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+              <li>HTML/HTML5</li>
+              <li>Microsoft 365</li>
+              <li>Digital literacy</li>
+              <li>Cryptocurrency Trading</li>
+              <li>Information Technology Skills</li>
+              <li>Communication Skills</li>
+            </ul>
+          </section>
+        </div>
+      </div>
 
       <!-- FOOTER -->
       <footer>

@@ -1,0 +1,125 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+  <defs>
+    <!-- Deep background gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#12121e;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gold shimmer gradient for letters -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e27a" />
+      <stop offset="35%" style="stop-color:#e8b94f" />
+      <stop offset="60%" style="stop-color:#c8881e" />
+      <stop offset="100%" style="stop-color:#f5e27a" />
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Subtle inner shadow -->
+    <filter id="innerGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Ring gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5e27a;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#c8881e;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#f5e27a;stop-opacity:0.9" />
+    </linearGradient>
+
+    <!-- Clip for inner circle -->
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="148"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="32"/>
+
+  <!-- Decorative outer ring -->
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#ringGrad)" stroke-width="1.2" opacity="0.5"/>
+
+  <!-- Main circle backdrop -->
+  <circle cx="200" cy="200" r="155" fill="#0e0e1a" stroke="url(#ringGrad)" stroke-width="2.2"/>
+
+  <!-- Subtle noise / texture lines inside circle -->
+  <g clip-path="url(#circleClip)" opacity="0.06">
+    <line x1="52" y1="80" x2="348" y2="80" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="110" x2="348" y2="110" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="140" x2="348" y2="140" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="170" x2="348" y2="170" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="200" x2="348" y2="200" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="230" x2="348" y2="230" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="260" x2="348" y2="260" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="290" x2="348" y2="290" stroke="#f5e27a" stroke-width="0.5"/>
+    <line x1="52" y1="320" x2="348" y2="320" stroke="#f5e27a" stroke-width="0.5"/>
+  </g>
+
+  <!-- Thin accent ring -->
+  <circle cx="200" cy="200" r="136" fill="none" stroke="#f5e27a" stroke-width="0.5" opacity="0.18"/>
+
+  <!-- ===== LETTER A ===== -->
+  <!-- A: peak at (155, 108), left foot (108, 272), right foot (202, 272) -->
+  <!-- Left leg -->
+  <polygon
+    points="155,108 108,272 128,272 165,138"
+    fill="url(#goldGrad)"
+    filter="url(#glow)"
+  />
+  <!-- Right leg -->
+  <polygon
+    points="155,108 202,272 182,272 145,138"
+    fill="url(#goldGrad)"
+    filter="url(#glow)"
+  />
+  <!-- Crossbar -->
+  <rect x="118" y="210" width="74" height="18" rx="2" fill="url(#goldGrad)" filter="url(#glow)"/>
+
+  <!-- ===== LETTER K ===== -->
+  <!-- K: vertical bar x=212..232, y=108..272 -->
+  <rect x="212" y="108" width="22" height="164" rx="3" fill="url(#goldGrad)" filter="url(#glow)"/>
+  <!-- Upper diagonal arm: from mid-bar (222,190) to top-right (292,108) -->
+  <polygon
+    points="222,185 222,200 234,200 292,108 270,108"
+    fill="url(#goldGrad)"
+    filter="url(#glow)"
+  />
+  <!-- Lower diagonal arm: from mid-bar (222,200) to bottom-right (292,272) -->
+  <polygon
+    points="222,196 222,212 270,272 292,272 234,200"
+    fill="url(#goldGrad)"
+    filter="url(#glow)"
+  />
+
+  <!-- Divider dot between A and K -->
+  <circle cx="207" cy="190" r="4" fill="#f5e27a" opacity="0.6"/>
+
+  <!-- Bottom label -->
+  <text
+    x="200"
+    y="310"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="13"
+    letter-spacing="6"
+    fill="#f5e27a"
+    opacity="0.55"
+  >STUDIO</text>
+
+  <!-- Tiny corner ornament dots -->
+  <circle cx="200" cy="355" r="2.5" fill="#f5e27a" opacity="0.3"/>
+  <circle cx="188" cy="355" r="1.5" fill="#f5e27a" opacity="0.2"/>
+  <circle cx="212" cy="355" r="1.5" fill="#f5e27a" opacity="0.2"/>
+</svg>

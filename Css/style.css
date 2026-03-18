@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  padding: 50px;
-  /* background-color: aqua; */
+  padding: 0px 20px;
+  background-color: darkgray;
 }
 
 h1,
@@ -14,13 +14,35 @@ h4 {
 
 #header {
   background-color: moccasin;
-  height: 50px;
-  overflow-y: auto;
-  height: 150px;
+  /* height: 50px; */
+  /* overflow-y: auto; */
+  /* height: 150px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
-#header nav li {
-  color: peru;
+#header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.navigation {
+  display: flex;
+  gap: 25px;
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation li {
+  list-style: none;
 }
 
 .card {
@@ -32,4 +54,19 @@ h4 {
 .test {
   background-color: chocolate !important;
   color: cornsilk !important;
+}
+
+/* sticky */
+.divide {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  /* position: relative; */
+}
+
+.skills {
+  margin-top: 20px;
+  background-color: burlywood;
+  position: sticky;
+  top: 20%;
 }
