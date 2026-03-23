@@ -1,0 +1,44 @@
+/* <!Universal selector--> */
+* {
+  margin: 5;
+  padding: 20;
+  font: 1em sans-serif;
+}
+
+/* <!--Type selectors--> */
+h1,
+h2,
+h4 {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: medium;
+}
+
+#header {
+  background-color: brown;
+  overflow-y: auto;
+}
+
+/* <!--Three classes--> */
+.card {
+  background-color:lightgray;
+  padding: 20px;
+  border: 10px solid blue;
+}
+
+.navigation {
+  background: lightyellow; 
+  padding: 10px;
+}
+
+
+/* <!--Test cascade order--> */
+p {
+  color: dimgrey; 
+  font-style: italic; 
+}
+
+p {
+  color: aquamarine;
+  font-style: oblique;
+}
