@@ -1,0 +1,18 @@
+card {
+ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+ transition: transform 0.3s ease;
+ border-radius: 10px;
+ overflow: hidden;
+ background: #fff;
+}
+card:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+card img {
+ width: 100%;
+ display: block;
+}
+container {
+ padding: 16px;
+}
