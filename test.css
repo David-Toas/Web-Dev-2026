@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
   margin: 0;
   padding: 0;
   background-color: #1f2022;
   /* display: block; */
-  height: screen;
+  /* height: screen; */
+  padding-top: 110px;
 }
 
 #header {
@@ -17,7 +18,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px 70px;
+  padding: 20px 120px;
   z-index: 1000;
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
@@ -51,11 +52,51 @@ body {
 
 .container {
   display: flex;
-  align-items: center;
+  align-items: end;
+  /* justify-content: center; */
+
   gap: 3px;
+  /* background-color: ; */
+  position: relative;
 }
 
-.image {
-  background-image: url(image.png);
-  height: auto;
+.container img {
+  width: 850px;
+  height: 520px;
+  z-index: 10;
+  position: absolute;
+  top: 5px;
+  left: 100px;
+}
+
+.sub-container {
+  z-index: 1000;
+  color: white;
+}
+
+.sub-container1 {
+  z-index: 1000;
+  color: white;
+  position: relative;
+}
+.photo {
+  position: absolute;
+  color: #00adb5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  top: 205px;
+  left: 150px;
+}
+/* .photo p {
+  z-index: 999999999;
+} */
+
+.dot {
+  position: absolute;
+  color: #d5d3d3;
+  font-size: 60px;
+  font-weight: 900;
+  top: -30px;
+  left: -13px;
+  /* z-index: 100; */
 }
