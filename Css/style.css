@@ -21,8 +21,13 @@ h4 {
   align-items: center;
   justify-content: space-evenly;
   padding: 10px 20px;
-  margin-top: 20px;
   border-radius: 20px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 #header img {
@@ -45,6 +50,22 @@ h4 {
   list-style: none;
 }
 
+.sidebar-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 370px;
+}
+
+.sidebar-navigation a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar-navigation li {
+  list-style: none;
+}
+
 .card {
   background-color: bisque;
   padding: 20px;
@@ -62,6 +83,8 @@ h4 {
   gap: 20px;
   align-items: start;
   /* position: relative; */
+  margin-top: 120px;
+  flex: 1 0 200px;
 }
 
 .skills {
@@ -69,4 +92,39 @@ h4 {
   background-color: burlywood;
   position: sticky;
   top: 20%;
+}
+
+.flex-grow {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  background-color: black;
+  color: azure;
+  margin: 50px 20px;
+  padding: 50px;
+  gap: 20px;
+  grid-column: 1 / span 2;
+}
+
+.class1 {
+  background-color: bisque;
+}
+.class2 {
+  background-color: brown;
+}
+.class3 {
+  background-color: burlywood;
+}
+
+@media (max-width: 320px) {
+  .flex-grow {
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  body {
+    background-color: lightblue;
+  }
 }
