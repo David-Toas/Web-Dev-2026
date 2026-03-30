@@ -1,7 +1,22 @@
+:root {
+  --main-bg-color: teal;
+  --main-font-size: 100px;
+}
+
 body {
   margin: 0;
-  padding: 0px 20px;
-  background-color: darkgray;
+  padding: 50px;
+  background-color: #e78a00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainbody {
+  background-color: rgb(77, 69, 69);
+  border-radius: 20px;
+  height: 600px;
+  overflow-y: auto;
 }
 
 h1,
@@ -23,11 +38,11 @@ h4 {
   padding: 10px 20px;
   border-radius: 20px;
 
-  position: fixed;
+  /* position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 1000; */
 }
 
 #header img {
@@ -44,6 +59,15 @@ h4 {
 .navigation a {
   color: black;
   text-decoration: none;
+}
+
+.navigation a:hover {
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 15px;
+  padding: 4px;
+  transition: all 1s ease-in-out;
 }
 
 .navigation li {
@@ -95,24 +119,42 @@ h4 {
 }
 
 .flex-grow {
-  display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+  display: flex;
+  flex-direction: row;
+  /* flex-shrink: 3; */
   background-color: black;
   color: azure;
-  margin: 50px 20px;
+  width: 200px;
+  /* margin: 50px 20px; */
   padding: 50px;
   gap: 20px;
-  grid-column: 1 / span 2;
+  /* grid-column: 1 / span 2; */
 }
 
+.class1,
+.class2,
+.class3 {
+  min-width: 150px;
+}
 .class1 {
   background-color: bisque;
+  flex-shrink: 2;
 }
 .class2 {
   background-color: brown;
+  flex-shrink: 1;
 }
 .class3 {
   background-color: burlywood;
+  flex-shrink: 1;
+}
+
+button {
+  transition: all 1s ease;
+}
+button:hover {
+  background: blue;
+  transform: scale(1.05);
 }
 
 @media (max-width: 320px) {
@@ -127,4 +169,94 @@ h4 {
   body {
     background-color: lightblue;
   }
+}
+
+/* section {
+  background-color: var(--main-bg-color);
+  font: var(--main-font-size);
+} */
+/* @keyframes myAnimation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: myAnimation;
+  animation-duration: 4s;
+} */
+
+/* @keyframes sj {
+  0% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+
+  25% {
+    top: 0;
+    left: calc(100% - 100px);
+    background-color: yellow;
+  }
+
+  50% {
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    background-color: blue;
+  }
+
+  75% {
+    top: calc(100% - 100px);
+    left: 0;
+    background-color: orange;
+  }
+
+  100% {
+    top: 0;
+    left: 0;
+    background-color: green;
+  }
+} */
+
+/* .animate {
+  width: 100px;
+  height: 100px;
+  position: absolute; 
+  animation: sj 4s infinite linear;
+} */
+
+footer a:active {
+  color: blue;
+  background-color: gold;
+  /* border: none;
+  background-color: azure;
+  border-radius: 15px;
+  padding: 4px;
+  transition: all 1s ease-in-out; */
+}
+
+#subject:focus {
+  border: solid salmon;
+  background-color: burlywood;
+}
+
+.line {
+  background-color: #4c4c4c;
+  height: 10px;
+  width: 220px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
