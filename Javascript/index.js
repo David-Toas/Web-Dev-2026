@@ -43,9 +43,64 @@ let b = null;
 
 let x = 10;
 let y = 5;
-console.log(x + y);
-console.log(x - y);
-console.log(x * y);
-console.log(x / y);
-console.log(x % y);
-console.log(x ** y);
+let d = "5";
+// console.log(x + y);
+// console.log(x - y);
+// console.log(x * y);
+// console.log(x / y);
+// console.log(x % y);
+// console.log(x ** y);
+
+// Comparison operators
+// == === != !== > < >= <=
+
+// console.log(x == y); //false
+// console.log(y === d); //false
+// console.log(x != y); //true
+// console.log(x !== d); //true
+// console.log(x > y); //true
+// console.log(x < y); //false
+// console.log(x >= y); //true
+// console.log(x <= y); //false
+
+// Logical operators
+// && || !
+
+// console.log(x > y && y > 0);
+// console.log(x > y || y < 0);
+// console.log(!(x > y));
+
+// COnditional statements
+
+// if, else statements
+// if (age >= 18) {
+//   console.log("You are eligible to vote.");
+// } else {
+//   console.log("You are not eligible to vote, wait for your time");
+// }
+
+// if, else if, else statements
+// if (age <= 5) {
+//   console.log("You are a baby.");
+// } else if (age > 5 && age <= 12) {
+//   console.log("You are a child.");
+// } else if (age > 12 && age <= 19) {
+//   console.log("You are a teenager.");
+// } else if (age > 19 && age <= 59) {
+//   console.log("You are an adult.");
+// } else {
+//   console.log("You are a senior citizen.");
+// }
+
+// switch statement
+age = prompt("Please enter your age:");
+switch (true) {
+  case age <= 5:
+    console.log("You are a baby.");
+    break;
+  case age > 5 && age <= 12:
+    console.log("You are a child.");
+    break;
+  default:
+    console.log("You are not a baby or child.");
+}
